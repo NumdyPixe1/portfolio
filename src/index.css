@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'BungeeFont';
+  src: url('/src/assets/fonts/Bungee-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PalanquinDarkFont';
+  src: url('/src/assets/fonts/PalanquinDark-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-palanquin-dark: 'PalanquinDarkFont', sans-serif;
+  --font-bungee: 'BungeeFont', sans-serif;
+
+}
+
+:root {
+  --ink: #171916;
+  --paper: #e8e8df;
+  --muted: #777a6c;
+  --line: rgba(23, 25, 22, 0.2);
+  --acid: #c5f34a;
+  --serif: Georgia, 'Times New Roman', serif;
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--paper);
+}
+
+#root {
+  min-height: 100vh;
+}

@@ -1,164 +1,189 @@
-/* @font-face {
-    font-family: Bungee-Regular;
-    src: url(/Font/Bungee-Regular.ttf);
-
-}
-
-@font-face {
-    font-family: PalanquinDark-Regular;
-    src: url(/Font/PalanquinDark-Regular.ttf);
-} */
-
- /*Font*/
+/*Font*/
 .palanquin-dark-regular {
   font-family: "Palanquin Dark", sans-serif;
-  font-weight: 400; /* Regular weight */
+  font-weight: 400;
+  /* Regular weight */
   font-style: normal;
 }
 
 .palanquin-dark-bold {
   font-family: "Palanquin Dark", sans-serif;
-  font-weight: 700; /* Bold weight */
+  font-weight: 700;
+  /* Bold weight */
   font-style: normal;
 }
+
 .bungee-regular {
   font-family: "Bungee", serif;
   font-weight: 400;
   font-style: normal;
-} 
-* {       
-    padding: auto; margin:auto;
-    box-sizing: border-box; 
 }
- 
-div.info-desc{
+
+/* =================================================================== */
+
+* {
+  padding: auto;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #F8FAFC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+div.info-desc {
   text-align: start;
   margin: 0 30%;
 }
- div.main{
-    align-items: center;
-    display: flex;
-    box-sizing: border-box;
-  }
 
-div.content-title{
-    width: 650px;   
-    right: 100px; 
+div.main {
+  gap: 100px;
+  align-items: center;
+  display: flex;
 }
 
-div.content-1-title,div.title-project{    
+
+.gallery-img {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  object-fit: cover;
+}
+
+div.introduce,
+div.title-project {
   font-family: "Bungee", serif;
 }
-div.title-project{
-text-align: start;
-margin-left: 110px;
+
+div.title-project {
+  text-align: start;
+  margin-left: 110px;
 }
 
-div.content-2-title,div.main-about,li.nav-item{
+div.descript,
+div.main-about,
+li.nav-item {
   font-family: "Palanquin Dark", sans-serif;
 }
-div.main-about{
+
+div.main-about {
   display: block;
   text-align: center;
 }
-img.my-image{
+
+img.my-image {
   border-radius: 50%;
   width: 200px;
 }
 
-div.social{
-display: grid;
-grid-template-columns: 50px 50px 50px;
-width: fit-content;
-position: relative;
-left: 150px;
- /* top: auto;*/
-}
-img.social-img{
-   height: 40px;
-}
-footer{
- margin-bottom: 10%;
-}
-/* --------------------------------------------------------- */
+div.social {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  width: fit-content;
 
-div.project-contatiner,div.activities{
-position: relative;
-top: 80px;  
+  /* top: auto;*/
+}
+
+img.social-img {
+  height: 40px;
+}
+
+/* =================================================================== */
+
+div.project-contatiner {
+  position: relative;
+  top: 80px;
 
 }
 
 
-div.card-img-top{
+div.card-img-top {
   height: 25rem;
 }
-div.card{
+
+div.card {
   margin-bottom: 20px;
   height: 25rem;
 }
- 
-div.card-deck{
+
+div.card-deck {
   display: flex;
   flex-wrap: wrap;
   position: relative;
   top: 20px;
   flex-direction: row;
   padding: 0 200px;
-   
-}   
 
-a.card-link{
+}
+
+a.card-link {
   text-decoration: none;
   color: black;
 }
 
-div.content{
+div.content {
   padding: auto;
   margin: 50px 10px;
 }
-/* --------------------------------------------------------- */
+
+/* =================================================================== */
 
 /*ความกว้าง 768px ลงไป*/
-@media (max-width: 768px) { 
-  div.social{ text-align: center;
-      left: auto; top: 30px;}
-   
-    div.info-desc{
-      margin: 0 10%;
-
-    }
-    div.content-title{
-      right: auto;
-      position: relative;
-      text-align: center;
-      top: 30px;
-      height: auto;
-      width: auto;}
-
-    div.main{
-     display: block;}
-
-    div.image-contatiner{
-    display: flex;     }
-
-    div.content-1-title{
-     width: 200px;}
-
-  div.content-1-project{ 
-      margin-left: auto;width: fit-content;
+@media (max-width: 768px) {
+  div.social {
+    text-align: center;
+    left: auto;
+    top: 30px;
   }
-div.title-project{
-  text-align: center;
-  margin-left: 0px;
-}
-img.active{
-  width: 100%;
-}
 
-  div.card-deck{
-      display: block;
-      top: 20px; 
-      padding: 0px;
+  div.info-desc {
+    margin: 0 10%;
 
-      }      
-}     
+  }
+
+  div.content-title {
+    right: auto;
+    position: relative;
+    text-align: center;
+    top: 30px;
+    height: auto;
+    width: auto;
+  }
+
+  div.main {
+    display: block;
+  }
+
+  div.image-contatiner {
+    display: flex;
+  }
+
+
+  div.content-1-project {
+    margin-left: auto;
+    width: fit-content;
+  }
+
+  div.title-project {
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  img.active {
+    width: 100%;
+  }
+
+  div.card-deck {
+    display: block;
+    top: 20px;
+    padding: 0px;
+
+  }
+}
