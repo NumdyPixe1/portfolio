@@ -1,12 +1,12 @@
 import { motion } from "motion/react";
 
 export default function Typewriter({ textProps }) {
+  // แยก text เป็นทีละตัวอักษร
   const characters = Array.from(textProps);
   const containerVariants = {
     hidden: { opacity: 1 },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.05 },
     },
   };
 

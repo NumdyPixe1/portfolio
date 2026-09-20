@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Data } from "../db/db";
 
 export default function ImageCarousel({ slides }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

@@ -61,28 +61,59 @@ export const Data = {
       imgName: "github.png",
     },
   ],
-  a: [{ 2024: "Global Game Jam 2024 X Game Asset Jam by ANT DPU" }],
+  activities: [{ 2024: "Global Game Jam 2024 X Game Asset Jam by ANT DPU" }],
   image: [
-    {
-      id: 1,
-      year: 2024,
-      title: "Global Game Jam 2024 X Game Asset Jam by ANT DPU",
-      imgName: "me-1-2024.jpg",
-    },
     {
       id: 2,
       title: "Global Game Jam 2023 X Art Toys by ANT DPU",
       imgName: "me-1-2023.jpg",
     },
     {
-      id: 3,
+      id: 1,
+      year: 2024,
       title: "Global Game Jam 2024 X Game Asset Jam by ANT DPU",
-      imgName: "me-2-2024.jpg",
+      imgName: "me-1-2024.jpg",
+    },
+
+    // {
+    //   id: 3,
+    //   title: "Global Game Jam 2024 X Game Asset Jam by ANT DPU",
+    //   imgName: "me-2-2024.jpg",
+    // },
+    // {
+    //   id: 4,
+    //   title: "Global Game Jam 2024 X Game Asset Jam by ANT DPU",
+    //   imgName: "me-3-2024.jpg",
+    // },
+  ],
+  timelineData: [
+    // {
+    //   year: "2020 - 2024",
+    //   title: "B.S. in Interactive Design and Game Development",
+    //   description: "",
+    //   location: "Dhurakij Pundit University",
+    //   position: "left",
+    //   color: "#e74c3c",
+    // },
+    {
+      year: "2024",
+      title: "Game Developer Intern",
+      description:
+        "End-to-End Development: Developed a mini-game using Unity and designed user interface design.",
+      location: "Digitopolis Co., Ltd.",
+
+      position: "right",
+      color: "#b329d6",
     },
     {
-      id: 4,
-      title: "Global Game Jam 2024 X Game Asset Jam by ANT DPU",
-      imgName: "me-3-2024.jpg",
+      year: "Jun — Aug 2026",
+      title: "Game Master (GM)",
+      description:
+        "Conducted server maintenance QA, resolved player tickets via osTicket, and managed database queries using HeidiSQL.",
+      location: "Electronics Extreme Co., Ltd.",
+
+      position: "left",
+      color: "#f1c40f",
     },
   ],
 
